@@ -5,41 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
     <h1 class="heading">Calculator</h1>
     <div class="calculator-body">
         <div id="calculator-screen"></div>
         <div class="calculator-key-body">
-                <div class="keys" style="background-color: #110D0F; color: white;" onclick="backSpace()">>>></div>
+                <div class="keys" style="background-color: #110D0F; color: white;" onclick="operatorFunction('bksp')">>>></div>
                 <div class="keys" style="background-color: #110D0F; color: white;" onclick="plusMinus()">+/-</div>
-                <div class="keys" style="background-color: #110D0F; color: white;" onclick="square()">square</div>
-                <div class="keys" style="background-color: #110D0F; color: white;" onclick="cube()">cube</div>
-                <div class="keys" style="background-color: #B4353C; color: white;" onclick="allClear()">AC</div>
-                <div class="keys" onclick="numberSeven()">7</div>
-                <div class="keys" onclick="numberEight()">8</div>
-                <div class="keys" onclick="numberNine()">9</div>
-                <div class="keys" onclick="moduloDivision()">%</div>
-                <div class="keys" onclick="squareRoot()">sqrt()</div>
-                <div class="keys" onclick="numberFour()">4</div>
-                <div class="keys" onclick="numberFive()">5</div>
-                <div class="keys" onclick="numberSix()">6</div>
-                <div class="keys" onclick="multiplication()">*</div>
-                <div class="keys" onclick="division()">/</div>
-                <div class="keys" onclick="numberOne()">1</div>
-                <div class="keys" onclick="numberTwo()">2</div>
-                <div class="keys" onclick="numberThree()">3</div>
-                <div class="keys" onclick="exponent()">**</div>
-                <div class="keys" onclick="subtraction()">-</div>
-                <div class="keys" onclick="numberZero()">0</div>
-                <div class="keys" onclick="numberDoubleZero()">00</div>
-                <div class="keys" onclick="decimal()">.</div>
-                <div class="keys" onclick="addition()">+</div>
+                <div class="keys" style="background-color: #110D0F; color: white;" onclick="operatorFunction('sqr')">square</div>
+                <div class="keys" style="background-color: #110D0F; color: white;" onclick="operatorFunction('cube')">cube</div>
+                <div class="keys" style="background-color: #B4353C; color: white;" onclick="operatorFunction('AC')">AC</div>
+                <div class="keys" onclick="printNumber('7')">7</div>
+                <div class="keys" onclick="printNumber('8')">8</div>
+                <div class="keys" onclick="printNumber('9')">9</div>
+                <div class="keys" onclick="operatorFunction('mods')">%</div>
+                <div class="keys" onclick="operatorFunction('sqrt')">sqrt()</div>
+                <div class="keys" onclick="printNumber('4')">4</div>
+                <div class="keys" onclick="printNumber('5')">5</div>
+                <div class="keys" onclick="printNumber('6')">6</div>
+                <div class="keys" onclick="operatorFunction('mul')">*</div>
+                <div class="keys" onclick="operatorFunction('divs')">/</div>
+                <div class="keys" onclick="printNumber('1')">1</div>
+                <div class="keys" onclick="printNumber('2')">2</div>
+                <div class="keys" onclick="printNumber('3')">3</div>
+                <div class="keys" onclick="operatorFunction('exp')">**</div>
+                <div class="keys" onclick="operatorFunction('sub')">-</div>
+                <div class="keys" onclick="printNumber('0')">0</div>
+                <div class="keys" onclick="printNumber('00')">00</div>
+                <div class="keys" onclick="operatorFunction('dec')">.</div>
+                <div class="keys" onclick="operatorFunction('add')">+</div>
                 <div class="keys" style="background-color: green; color: white;" onclick="isEqualsTo()">=</div>
         </div>
     </div>
     <h2 class="heading" style="padding-top: 1vw;">Made by Deveesh only using CSS </h2>
+    <button type="checkbox" role="switch">Hello</button>
     <script src="script.js"></script>
 </body>
 </html>
