@@ -48,11 +48,6 @@ function operatorFunction(operator){
             document.getElementById("calculator-screen").innerHTML = Math.sqrt(text);
             click = 0;
         }
-        else if(operator == "bksp"){
-            let newText = text.slice(0, -1);
-            document.getElementById("calculator-screen").innerHTML = newText;
-            click = 0;
-        }
         change = 0;
     }
 }
@@ -62,11 +57,17 @@ function allClear(){
     click = 0;
 }
 
+function backSpace(){
+    let text = document.getElementById("calculator-screen").textContent;
+    let newText = text.slice(0, -1);
+    document.getElementById("calculator-screen").innerHTML = newText;
+    click = 0;
+}
+
 
 let change = 0;
 function isEqualsTo(){
     let text = document.getElementById("calculator-screen").textContent;
-    text = text.slice(0,12);
     let answer = eval(text);
     document.getElementById("calculator-screen").innerHTML = answer;
     change = 1;
